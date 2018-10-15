@@ -1,0 +1,75 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>聚好贷</title>
+    <meta charset="utf-8" />
+
+    <meta name="keywords" content="">
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="renderer" content="webkit">
+
+    <meta http-equiv="Expires" CONTENT="0">
+    <link href="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/css/base_all.css" rel="stylesheet" />
+    <link href="questionPageIndex_zt/css/questionPageIndex_zt.css" rel="stylesheet" />
+    <script src="https://dspjubao360.oss-cn-beijing.aliyuncs.com/basejs/common.js"></script>
+
+    <script src="https://dspjubao360.oss-cn-beijing.aliyuncs.com/basejs/pageInit.js"></script>
+    <script src="http://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/js/angular.min.js"></script>
+    <script src="http://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/js/angular-cookies.min.js"></script>
+
+    <script src="questionPageIndex_zt/js/questionPageIndex_zt.js"></script>
+
+</head>
+<body ng-app="myapp">
+
+    <div class="main" ng-controller="abc">
+        <div class="logoList">
+            <form name="myForm" novalidate>
+                <div class="userTxt">
+                    <span>
+                        <img src="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/aggregationPage/jhd/q1/questionPageIndex/img/phone.png" />
+                    </span>
+                    <input type="tel" id="tel" placeholder="请输入手机号码" ng-model="tels" ng-required="true">
+                </div>
+
+                <div class="getImgInfo">
+                    <div class="telTxt">
+                        <span>
+
+                            <img src="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/aggregationPage/jhd/q1/questionPageIndex/img/safe.png" />
+                        </span>
+                        <input type="text" id="imgTxt" placeholder="请输入验证码" ng-model="checkTxt" />
+                    </div>
+                    <div class="getTxt" ng-show="!disable">
+                        <span ng-click="getTxt()">获取验证码</span>
+                    </div>
+                    <div class="getTxt" ng-show="disable" style="color:darkgray;border:1px solid darkgray">
+                        <span ng-show="disable" style="color:white;font-size:0.37rem;">{{haveTime}}</span>
+                    </div>
+                </div>
+
+                <div class="sigInBtn">
+                    <input ng-class="gray" ng-click="signIn()" value="登录" />
+                </div>
+                <div class="userAgreement">
+                    <div class="agreement">
+                        <label>
+                            <input type="checkbox" ng-model="chk">我同意《<a href="http://ju.jubao360.cn/s/usercontract.html">用户注册服务协议</a>》
+                        </label>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
+
