@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>聚好贷</title>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="renderer" content="webkit">
+
+    <meta http-equiv="Expires" CONTENT="0">
+
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+
+    <link href="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/css/base_all.css" rel="stylesheet" />
+    <link href="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/questionCity/css/questionCity.css" rel="stylesheet" />
+    <link href="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/questionCity/css/cityPublic.css" rel="stylesheet" />
+    <script src="https://dspjubao360.oss-cn-beijing.aliyuncs.com/basejs/common.js"></script>
+    <script src="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/js/jquery-1.8.3.min.js"></script>
+    <script src="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/questionCity/js/questionCity.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99415-4"></script>
+    <script src="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/public/js/googleMonitor.js"></script>
+</head>
+
+<body>
+
+
+    <div id="scroller_view" style="">
+        <header class="m-navbar navbar-fixed">
+            <a href="JavaScript:;" class="navbar-item ">
+                <svg t="1537510938699" class="icon"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1157" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.8rem" height="0.8rem">
+                    <defs><style type="text/css"></style></defs>
+                    <path d="M328.555136 515.587823l364.265028-364.265028c20.07399-20.049007 20.07399-52.553369 0-72.577393-20.024024-20.049007-52.528386-20.049007-72.577393 0L220.992263 477.971128c-20.024024 20.024024-20.024024 52.528386 0 72.577393 1.578929 1.578929 3.383306 2.83188 5.112534 4.160179 0.300796 0.325779 0.526243 0.701724 0.827039 1.027503l389.877663 389.877663c19.57293 19.57293 51.300418 19.57293 70.873148 0s19.57293-51.300418 0-70.873148L328.555136 515.587823z" p-id="1158">
+                    </path>
+                </svg> 
+            </a>
+            <div class="navbar-center">
+                <span class="navbar-title  font-big">选择城市</span>
+            </div>
+        </header>
+        <p class="now-ofcourse content  font-big"">当前定位城市</p>
+        <div class="now-city" id="city-loan">
+            <i style="font-size:20px;color:#12a1ff;" class="icon-location"></i>
+            <span>北京市</span>
+        </div>
+        <div class="now-ofcourse ">
+        <div id="iconBack">
+            <svg t="1537508027998"style="margin-top:0.3rem" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1041" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.5rem" height="0.5rem">
+                <defs><style type="text/css"></style></defs>
+            <path d="M993.726 452.32c-19.387-45.837-47.128-86.989-82.454-122.313-35.326-35.326-76.479-63.068-122.314-82.455-47.486-20.084-97.893-30.269-149.823-30.269H263.133l180.39-180.288H239.865L0.007 276.854l239.858 239.858h203.658L263.132 336.425h376.002c146.518 0 265.719 119.201 265.719 265.719 0 146.519-119.201 265.719-265.719 265.719H137.03c-32.9 0-59.571 26.671-59.571 59.571s26.671 59.571 59.571 59.571h502.104c51.931 0 102.337-10.185 149.823-30.269 45.837-19.388 86.988-47.13 122.314-82.456 35.326-35.324 63.067-76.478 82.454-122.313 20.085-47.485 30.269-97.894 30.269-149.823s-10.183-102.338-30.268-149.824z" p-id="1042">
+                </path>
+            </svg>
+           
+         </div>
+            <p class="font-big">城市列表：按字母顺序排列</p>
+        </div>
+        <div id="ZMView">
+            <ul>
+            <li class="item_style" data-value="A">A</li>
+            <li class="item_style" data-value="B">B</li>
+            <li class="item_style" data-value="C">C</li>
+            <li class="item_style" data-value="D">D</li>
+            <li class="item_style" data-value="E">E</li>
+            <li class="item_style" data-value="F">F</li>
+            <li class="item_style" data-value="G">G</li>
+            <li class="item_style" data-value="H">H</li>
+            <li class="item_style" data-value="J">J</li>
+            <li class="item_style" data-value="K">K</li>
+            <li class="item_style" data-value="L">L</li>
+            <li class="item_style" data-value="M">M</li>
+            <li class="item_style" data-value="N">N</li>
+            <li class="item_style" data-value="P">P</li>
+            <li class="item_style" data-value="Q">Q</li>
+            <li class="item_style" data-value="R">R</li>
+            <li class="item_style" data-value="S">S</li>
+            <li class="item_style" data-value="T">T</li>
+            <li class="item_style" data-value="W">W</li>
+            <li class="item_style" data-value="X">X</li>
+            <li class="item_style" data-value="Y">Y</li>
+            <li class="item_style" data-value="Z">Z</li>
+            </ul>
+        </div>
+        <div id="showView">
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
+
+
