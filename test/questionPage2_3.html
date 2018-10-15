@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>聚好贷</title>
+    <meta charset="utf-8" />
+
+    <meta name="keywords" content="">
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="renderer" content="webkit">
+
+
+    <meta http-equiv="Expires" CONTENT="0">
+    <link href="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/css/base_all.css" rel="stylesheet" />
+    <link href="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/css/public.css" rel="stylesheet" />
+    <link href="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/css/loading.css" rel="stylesheet" />
+    <link href="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/questionPage2_3/css/questionPageSuggess2_3.css" rel="stylesheet" />
+
+    <script src="https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/advgames/js/jquery.min.js"></script>
+    <script src="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/public/js/baiduMonitor.js"></script>
+
+    <script src="https://dspjubao360.oss-cn-beijing.aliyuncs.com/basejs/common.js"></script>
+
+    <script src="https://dspjubao360.oss-cn-beijing.aliyuncs.com/basejs/pageInit.js"></script>
+    <script src="questionPage2_3/js/questionPageSuggess2_3.js"></script>
+</head>
+<body>
+<div class="error" id="error">
+    <div class="error_bg">
+    </div>
+    <div class="option">
+        <div class="suggest_border">
+            <div class="suggest">提示</div>
+            <div class="suggest_content">     
+                请您手动选择</br><span>1-3</span>家贷款公司进行申请
+            </div>
+            <div class="y_border_top_dashed iknow">
+                <div class="y_btn">我知道了</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="main">
+        <div class="title">
+            <i id="back">
+                <svg t="1537510938699" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1157" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.8rem" height="0.8rem" fill="white">
+                    <path d="M328.555136 515.587823l364.265028-364.265028c20.07399-20.049007 20.07399-52.553369 0-72.577393-20.024024-20.049007-52.528386-20.049007-72.577393 0L220.992263 477.971128c-20.024024 20.024024-20.024024 52.528386 0 72.577393 1.578929 1.578929 3.383306 2.83188 5.112534 4.160179 0.300796 0.325779 0.526243 0.701724 0.827039 1.027503l389.877663 389.877663c19.57293 19.57293 51.300418 19.57293 70.873148 0s19.57293-51.300418 0-70.873148L328.555136 515.587823z" p-id="1158">
+                    </path>
+                </svg>             </i>
+            <span>为您推荐贷款</span>
+        </div>
+        <div class="suggs">
+            根据您的条件,推荐<span id="ADVlength" class="y_red_color"></span>家贷款机构：
+        </div>
+        <div class="rest"></div>
+        <div class="content">
+        <div id="pChose">
+            <div class="tr_title y_textCenter">
+
+                <div style="font-size:0.45rem;">人工选择申请</div>
+                <div style="font-size:0.26rem;">(手动勾选)</div>
+            </div>
+            
+        </div>
+        <div id="tChose">
+                <div class="tr_title y_textCenter">
+                    <div style="font-size:0.45rem;">自动申请</div>
+                    <div style="font-size:0.26rem;">(默认勾选)</div>
+                </div>
+
+            </div>
+        <div class="btnDiv">
+            <div class="agreement">
+                <input type="checkbox" class="y_checkbox" data-value="16,17,37,38,35" checked>
+                <input type="hidden" class="valueId" value="16,17,37,38,35" />
+
+                <span style="color:#417fd4"> 我同意<a href="http://ju.jubao360.cn/s/judaiUserContract.html"><span style="color:#ff6247">《聚好贷赠险协议》</span></a>,免费领取100万出行险，出行更安全。</span>
+            </div>
+            <div class="y_btn" href="javascript:;" id="submit">
+                选好了，立即申请
+            </div>
+            <div class="load-3 " id="loading">
+                <p>正在申请请稍后</p>
+                <div class="k-square-holder2">
+                    <div class="k-square4 k-square4a"></div>
+                    <div class="k-square4 k-square4b"></div>
+                    <div class="k-square4 k-square4c"></div>
+                    <div class="k-square4 k-square4d"></div>
+                </div>
+            </div>
+        </div>
+        <div class="explain">
+            <img src="http://daijubao360cn.oss-cn-beijing.aliyuncs.com/questionPage/questionPage2_3/img/shuoming.jpg" />
+            <p>
+                1. 部分客户不支持自动申请，请您勾选相应平台注册，在客</br>
+                &nbsp; &nbsp; 户页面手动提交申请。</br>
+                2. 人工选择部分每次只能提交1家，如果选择多家注册，请</br>
+                &nbsp; &nbsp; 您在平台页面注册完毕后，返回聚好贷的推荐结果页</br>
+                &nbsp; &nbsp; 再次注册。</br>
+                3. 自动注册部分的客户在提交后，请用户耐心等待，客户</br>
+                &nbsp; &nbsp; 经理会和您及时联系。</br>
+                4. 各家平台授信难易程度不同，为了您能成功贷款，请选</br>
+                &nbsp; &nbsp; 择多家平台一起注册。</br>
+
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
