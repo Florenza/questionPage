@@ -1,0 +1,240 @@
+﻿*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    color:black;
+    text-decoration:none;
+}
+a{
+    text-decoration:none;
+}
+input[type=button], input[type=submit], input[type=file], button { 
+    cursor: pointer; -webkit-appearance: none;
+}
+
+.choice_select{
+    position:relative;
+    float:right;
+}
+.choice_select select{
+     width: 100%;
+    -webkit-appearance: none;
+    font-size: 0.4566666666666667rem;
+    font-weight:500;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    display: block;
+    color: #4a89dc;
+    border: 0 solid #417fd4;
+    background: transparent;
+    direction: rtl;
+    padding-right: 1rem;
+    z-index: 5;
+    float:right;
+    margin-top: 0.1rem;
+}
+ .y_select:focus {
+    outline-offset: 0px;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.y_select i.icon-option:before {
+    font-family: "Microsoft New Tai Lue";
+    content: "  ";
+    display: block;
+    color: #a1a1a1;
+
+}
+ .dropdown {
+     width:0.5rem;
+     height:0.5rem;
+    color: #a1a1a1;
+    top: .55rem;
+    right: 0.3rem;
+    position: absolute;
+    font-size: .55rem;
+    z-index: 1;
+        background: url('https://jufengmemberimages.oss-cn-beijing.aliyuncs.com/aggregationPage/jhd/q1/questionPage/img/downdrop.png') no-repeat;
+    background-size:100%;
+}
+
+.y_select~ i {
+    display:block;
+    font-family: m_rongui_icon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+}
+.y_radio .radio_button {
+    display: block;
+    border: 0.02rem solid;
+    border-radius: 100%;
+}
+.y_radio .radio_button i{
+    width: 0.2rem;
+    height: 0.2rem;
+    cursor: pointer;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    position: relative;
+    margin-top: -0.1rem;
+    font-size:0.4rem;
+}
+.y_radio > input[type=radio]:checked ~ .radio_button {
+    border: 0.02rem solid #417fd4;
+}
+
+.y_radio > input[type=radio]:checked ~ .radio_button i {
+    background-color: #417fd4;
+    color: white;
+}
+
+.y_radio > input[type=radio] {
+    display: none;
+}
+
+.y_checkbox[type="checkbox"] {
+    -webkit-appearance: none; /*清除复选框默认样式*/
+    background: #fff url('http://jufengmemberimages.oss-cn-beijing.aliyuncs.com/aggregationPage/jhd/q1/questionPageIndex/img/ridao.png'); /*复选框的背景图，就是上图*/
+    vertical-align: middle;
+    background-size: 100%;
+    outline: none;
+    box-shadow: none;
+    margin-right: 0.12rem;
+    border-radius: 0.05333333333333334rem;
+}
+.y_checkbox[type="checkbox"]:checked {
+  background-position:0 -4.06666666666666665rem;
+  outline:none;
+  box-shadow:none;
+  background-size:100%;
+}
+.y_btn{
+    text-align: center;
+    width: 8.566666666666667rem;
+    height: 1.3rem;
+    line-height:1.3rem;
+    border: 0;
+    position: relative;
+    top: 0.09333333333333334rem;
+    font-size: 0.50333333333333335rem;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.15rem;
+    -webkit-border-radius:0.15rem;
+    color: white;
+    background: #0155b6;
+    text-decoration: none;
+}
+.y_inputText {
+    width: 8.56rem;
+    height: 1.32rem;
+    background: white;
+    border-radius: 0.15rem;
+    margin: 0 auto;
+    position: relative;
+    top:1.0666666666666667rem;
+    margin-bottom:0.5rem;
+    overflow:hidden;
+}
+.y_inputText input {
+    width: 6.666666666666667rem;
+    height: 1rem;
+    line-height: 1rem;
+    border: 0;
+    position: relative;
+    left: 1.5466666666666667rem;
+    display:block;
+    top:50%;
+    margin-top:-0.5rem;
+    font-size: 0.37333333333333335rem;
+    background: white;
+    outline: none;
+    text-indent: 0.15rem;
+}
+.y_inputText span {
+    border-right: 0.012rem solid #cccccc;
+    width: 1.3333333333333333rem;
+    height: 0.8rem;
+    background: white;
+    display: block;
+    position: absolute;
+    /* left: 0.2666666666666667rem; */
+    top: 50%;
+    margin-top: -0.4rem;
+}
+
+.y_inputText span img{
+    width: 0.68rem;
+    position: relative;
+    display: block;
+    top: 0;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 0.06rem;
+
+}
+.common_input{
+  display: block;
+  width: 100%;
+  border-radius: 0.13rem;
+  border: 0.022rem solid #ababab;
+}
+.decide_blue {
+    color:white;
+    background:#3ea4f7;
+}
+.no_border{
+    border:0;
+}
+.y_red_color{
+    color: #eb0d11;
+}
+.y_error{
+    border:0.02rem solid red !important;
+     color:red;
+}
+.y_textCenter{
+    text-align:center;
+}
+.y_fontRed{
+    color:red;
+}
+.y_hide{
+    display:none;
+}
+.y_errorShake{
+        animation: errorShake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+.y_border_top_dashed{
+    border-top:0.02rem dashed #417fd4;
+}
+.y_bg_gray{
+    background:#8f8f8f;
+}
+@keyframes errorShake{
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+}
+20%, 80% {
+    transform: translate3d(2px, 0, 0);
+}
+30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+}
+40%, 60% {
+    transform: translate3d(4px, 0, 0);
+}
+}
